@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+Classes utilizadas
+container-fluid
+row
+col-xs-  1 a 12
+col-md-  1 a 12
+
+
+Fundo:
+background: radial-gradient(circle, #85AEEF 0%, #7A72E8 100%);
+
+Fonte:
+color: #fff;
+
+
+Gradiente de Cores
+#FFFFFF
+#327295
+#CBD9E6
+#5775AC
+ 
+

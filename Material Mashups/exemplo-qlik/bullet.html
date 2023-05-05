@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="lib/jquery-3.2.1.min.js"></script>
+    <script>$('head').load('head.html');</script>
+</head>
+
+<body style="opacity: 0;">
+    <header class="barra flex flex-sp flex-cv">
+        <script>$('header').load('header.html');</script>
+    </header>
+
+    <nav>
+        <script>$('nav').load('nav.html');</script>
+    </nav>
+
+    <section class="cards barra">
+        <div class="card principal">
+            <h2>Bullet</h2>
+            <div id="chartdiv"></div>
+        </div>
+        <div class="cards-3col flex flex-sp flex-wr">
+            <div class="card c-infos">
+                <h3 class="green">Cars</h3>
+                <h2>17.8k <i></i> 12.6k</h2>
+                <p>
+                    Cars lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua.
+                </p>
+                <p class="fot">
+                    <span>last 7 days</span>
+                    <strong>
+                        <i class="fa fa-angle-double-up"></i>
+                        5.8%
+                    </strong>
+                </p>
+            </div>
+            <div class="card c-infos">
+                <h3 class="pink">Motorcycle</h3>
+                <h2>11.8k <i></i> 8.6k</h2>
+                <p>
+                    Motorcycle lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut
+                    labore et dolore magna aliqua.
+                </p>
+                <p class="fot">
+                    <span>last 7 days</span>
+                    <strong>
+                        <i class="fa fa-angle-double-up"></i>
+                        1.7%
+                    </strong>
+                </p>
+            </div>
+            <div class="card c-infos">
+                <h3 class="yellow">Bicycles</h3>
+                <h2>7.3k <i></i> 5.4k</h2>
+                <p>
+                    Bicycles lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut
+                    labore et dolore magna aliqua.
+                </p>
+                <p class="fot">
+                    <span>last 7 days</span>
+                    <strong class="pink">
+                        <i class="fa fa-angle-double-up"></i>
+                        2.4%
+                    </strong>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="barra">
+        <script>$('footer').load('footer.html');</script>
+    </footer>
+
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+    <script src="js/bullet.js"></script>
+
+</body>
+
+</html>

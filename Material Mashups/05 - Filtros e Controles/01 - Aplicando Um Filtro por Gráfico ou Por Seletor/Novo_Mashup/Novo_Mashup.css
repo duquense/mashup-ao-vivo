@@ -1,0 +1,274 @@
+body{
+		background: radial-gradient(circle, #85AEEF 0%, #7A72E8 100%);
+		color: #fff !important;
+}
+
+ 
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 45px 45px 0;
+}
+
+.qvplaceholder, .qvobject {
+	flex: 1 1 auto;
+	height: 300px;
+	min-width: 400px;
+	margin: 45px 0 0 45px;
+}
+
+#popup {
+	background-color: #c3534b;
+	color: #FFFFFF;
+	position: fixed;
+	max-width: 250px;
+	padding: 10px;
+	margin: 10px;
+	bottom: 0;
+	right: 0;
+	display: none;
+	border-radius: 5px;
+	z-index: 6;
+	font-family: sans-serif;
+}
+
+.close {
+	cursor: pointer;
+	background: 0 0;
+	border: 0;
+	float: right;
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 1;
+	color: #000;
+	text-shadow: 0 1px 0 #fff;
+	opacity: .2;
+	position: absolute;
+	right: 9px;
+	top: 7px;
+}
+
+.close:hover {
+	opacity: .5;
+}
+
+#popupText {
+	margin-right: 23px;
+}
+
+
+.amarelo {
+	background-color: yellow;
+}
+
+.vermelho{
+	background-color: red;
+}
+
+.azul{
+	background-color: #0000FF;
+}
+
+.altura_400{
+	height: 400px;
+}
+
+.kpi_l1, .kpi_l2{
+	font-size: 18px;
+    line-height: 22px;
+	padding: 5px 0px;
+} 
+
+.kpi_l2_n{
+	font-size: 18px;
+    line-height: 22px;
+	text-align: left;
+	padding: 12px 0px;
+}
+
+.kpi_22_n{
+	font-size: 14px;
+    line-height: 14px;
+	text-align: left;
+	padding: 5px 0px;
+}
+
+.kpi_l2_s{
+	font-size: 18px;
+    line-height: 22px;
+	text-align: right;
+	padding: 12px 0px;
+}
+
+.kpi_22_s{
+	font-size: 14px;
+    line-height: 14px;
+	text-align: right;
+	padding: 5px 0px;
+}
+
+.linha_kpi{
+	justify-content: center;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #fff;
+    transition: width .6s ease;
+}
+
+
+.linha_1{
+	margin-top: 25px;
+}
+
+.fundo_preto{
+	background-color: rgba(0,0,0,.2);
+}
+
+.card_1{
+	width: 20% !important;
+}
+
+.borda_direita{
+	border-right: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+
+#graf_01, #graf_01_02, #graf_02{
+	height: 400px;
+}
+
+@media screen and (max-width: 480px) {
+		.card_1{
+			width: 100% !important;
+			border: 5px solid rgba(255, 255, 255, 0.12);
+		}
+}
+
+
+#graf_02 > div > svg > g > g:nth-child(2) > g:nth-child(2) > g > g:nth-child(3),
+#graf_02 > div > svg > g > g:nth-child(2) > g:nth-child(2) > g > g:nth-child(3) > g:nth-child(1) > rect
+{
+	display: none !important;
+	
+}
+
+.expandir{
+	position: absolute;
+    right: 25px;
+    top: 0px;
+    z-index: 3;
+	cursor: pointer;
+}
+
+.expandir_ativo{
+	height: 100vh !important;
+    width: 100vw !important;
+    background-color: royalblue;
+    z-index: 2;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+}
+
+.linha_menu{
+	background-color: #F2F2F2;
+    color: black;
+	margin: 0px !important;
+}
+
+.sidebar_menu{
+	position: fixed;
+    top: 38px;
+    background-color: #f2f2f2;
+    z-index: 10;
+    height: 100vh;
+    left: -100vw;
+	transition: left 0.5s ease-in-out;
+}
+
+#sidebar_menu:checked ~ .sidebar_menu {
+  left: 0px;
+}
+
+.sidebar_menu .fa-2x {
+font-size: 2em;
+}
+.sidebar_menu .fa {
+position: relative;
+display: table-cell;
+width: 60px;
+height: 36px;
+text-align: center;
+vertical-align: middle;
+font-size:20px;
+}
+
+
+.sidebar_menu>ul {
+margin:7px 0;
+}
+
+.sidebar_menu li {
+position:relative;
+display:block;
+width:250px;
+}
+
+.sidebar_menu li>a {
+position:relative;
+display:table;
+border-collapse:collapse;
+border-spacing:0;
+color:#999;
+ font-family: arial;
+font-size: 14px;
+text-decoration:none;
+-webkit-transform:translateZ(0) scale(1,1);
+-webkit-transition:all .1s linear;
+transition:all .1s linear;
+  
+}
+
+.sidebar_menu li>a span {
+	line-height: 36px;
+}
+
+#sidebar_menu{
+	display:none;
+}
+
+#sidebar_menu_label{
+	margin: 0px;
+}
+
+.carrossel ~ div{
+	transform: translateX(-100vw);
+	transition: 1s;
+}
+
+.carrossel:checked ~ div{
+	transform: translateX(0vw);
+	transition: 1s;
+}
+
+.oculto{
+	display:none;
+}
+
+.absoluto{
+	position:absolute !important;
+	padding: 0px !important;
+	margin: 0px !important;
+	padding-right: 15px !important;
+}
+
+.filtro_regiao{
+	transition: 1s;
+	cursor: pointer;
+}
+
+.filtro_regiao:hover{
+	transition: 1s;
+	background-color: #2A60DE;
+}
